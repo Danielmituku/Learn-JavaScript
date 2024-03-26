@@ -4,3 +4,58 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+body{
+    background: #131376;
+}
+
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 60px auto 0;
+    padding: 20px ;
+}
+
+.app h2{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 1px solid #131376;
+    padding-bottom: 20px;
+}
+#question{
+    font-size: medium;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.btn{
+    width: 90%;
+    max-width: 600px;
+    margin-bottom: 9px;
+    padding: 9px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #fff;
+    background: #000;
+}
+
+#next-btn{
+    margin: 20px auto 0;
+    padding: 10px;
+    width: 15%;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+}
+
