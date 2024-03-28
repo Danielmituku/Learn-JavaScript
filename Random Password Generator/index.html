@@ -11,7 +11,7 @@
         <h1>Generate a <br><span>Random Password</span></h1>
         <div class="display">
             <input type="text" id="Password" placeholder="Password">
-            <img src="images/copy.png" alt=""> 
+            <img src="images/copy.png" alt="" onclick="copy()"> 
         </div>
         <button  onclick="genertePassword()"><img src="images/generate.png" alt="">Generate Password</button>
     </div>
@@ -28,7 +28,7 @@
         const allChar = upperCase + lowerCase + number + symbol;
 
         function genertePassword(){
-            let password = " ";
+            let password = "";
 
             password += upperCase[Math.floor(Math.random()*upperCase.length)];
             password += lowerCase[Math.floor(Math.random()*lowerCase.length)];
@@ -41,6 +41,11 @@
             passowrdBox.value = password;
         }
        
+        function copy(){
+            passowrdBox.select();
+            document.execCommand('copy');
+        }
+
     </script>
 </body>
 </html>
